@@ -6,6 +6,9 @@ import { MedicationHistory } from "./components/MedicationHistory";
 import "./App.css";
 
 function App() {
+  constructor(props){
+    super(props);
+  }
   return (
     <div>
       <Header />
