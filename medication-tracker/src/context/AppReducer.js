@@ -12,6 +12,11 @@ export default (state, action) => {
         ...state,
         transactions: [action.payload, ...state.transactions],
       };
+    case "ADD_TRANSACTION2":
+      return {
+        ...state,
+        transactions2: [action.payload, ...state.transactions2],
+      };
     default:
       return state;
   }

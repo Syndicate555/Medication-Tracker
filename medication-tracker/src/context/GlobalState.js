@@ -10,7 +10,7 @@ const initialState = {
     { id: 4, text: "Zimax", amount: 2 },
   ],
 
-  transactions2: [{ id: 5, text: "Multi-vitamin", amount: 1 }],
+  transactions2: [],
 };
 
 // Create context
@@ -34,6 +34,12 @@ export const GlobalProvider = ({ children }) => {
       payload: transaction,
     });
   }
+  function addTransaction2(transaction2) {
+    dispatch({
+      type: "ADD_TRANSACTION2",
+      payload: transaction2,
+    });
+  }
 
   return (
     <GlobalContext.Provider
@@ -42,6 +48,7 @@ export const GlobalProvider = ({ children }) => {
         transactions2: state.transactions2,
         deleteTransaction,
         addTransaction,
+        addTransaction2,
       }}
     >
       {children}

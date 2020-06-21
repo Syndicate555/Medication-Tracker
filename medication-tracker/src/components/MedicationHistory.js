@@ -7,7 +7,7 @@ export const MedicationHistory = () => {
   console.log(transactions2);
   return (
     <>
-      <h3>Checklist</h3>
+      <h3 style={{ textAlign: "center" }}>Checklist </h3>
       <ul className="list">
         {transactions.map((transaction) => (
           <Medicine transaction={transaction} />
