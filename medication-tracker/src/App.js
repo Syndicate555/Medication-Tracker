@@ -3,13 +3,13 @@ import { Header } from "./components/Header";
 import { Balance } from "./components/Balance";
 import { Medications } from "./components/Medications";
 import { MedicationHistory } from "./components/MedicationHistory";
-import Logo from "./profile.png";
 import { AddMedication } from "./components/AddMedication";
+import { GlobalProvider } from "./context/GlobalState";
 import "./App.css";
 
 function App() {
   return (
-    <div>
+    <GlobalProvider>
       <Header />
       <div className="container">
         <Balance />
@@ -17,7 +17,7 @@ function App() {
         <MedicationHistory />
         <AddMedication />
       </div>
-    </div>
+    </GlobalProvider>
   );
 }
 
