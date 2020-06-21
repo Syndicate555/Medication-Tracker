@@ -1,16 +1,16 @@
 import React, { useContext } from "react";
 import { GlobalContext } from "../context/GlobalState";
+import { Medicine } from "./Medicine";
 
 export const MedicationHistory = () => {
-  const context = useContext(GlobalContext);
+  const { transactions } = useContext(GlobalContext);
   return (
     <>
       <h3>History</h3>
       <ul className="list">
-        <li className="minus">
-          Panadol <span> Dosage: 2 pills/day</span>{" "}
-          <button class="delete-btn">x</button>
-        </li>
+        {transactions.map((transaction) => (
+          <Medicine transaction={transaction} />
+        ))}
       </ul>
     </>
   );

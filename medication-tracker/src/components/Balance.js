@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useContext } from "react";
+import { GlobalContext } from "../context/GlobalState";
 
 export const Balance = () => {
+  const { transactions } = useContext(GlobalContext);
   return (
     <div>
       <h4 style={{ textAlign: "center" }}> Your Current Medications</h4>
