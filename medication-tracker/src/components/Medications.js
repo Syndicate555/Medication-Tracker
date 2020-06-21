@@ -6,11 +6,13 @@ export const Medications = () => {
     <div className="inc-exp-container">
       <div>
         <h4>Medications Taken Today</h4>
-        <p className="money plus">aspirin</p>
+        <li className="money plus">aspirin</li>
       </div>
       <div>
         <h4>Medications Remaining</h4>
-        <p className="money minus">aspirin</p>
+        <li className="money minus">Vitamins</li>
+        <li className="money minus">Fish Oils</li>
+        <li className="money minus">Panadol</li>
       </div>
     </div>
   );

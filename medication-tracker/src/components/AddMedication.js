@@ -1,5 +1,5 @@
 import React, { useState, useContext } from "react";
-// import { GlobalContext } from "../context/GlobalState";
+import { GlobalContext } from "../context/GlobalState";
 
 export const AddMedication = () => {
   const [text, setText] = useState("");
@@ -37,7 +37,7 @@ export const AddMedication = () => {
             Dosage: <br />
           </label>
           <input
-            type="text"
+            type="number"
             value={amount}
             onChange={(e) => setAmount(e.target.value)}
             placeholder="Enter Dosage..."

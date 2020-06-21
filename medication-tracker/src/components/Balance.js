@@ -7,9 +7,9 @@ export const Balance = () => {
     <div>
       <h4 style={{ textAlign: "center" }}> Your Current Medications</h4>
       <div className="inc-exp-container">
-        <li>Tylenol</li>
-        <li>Tylenol</li>
-        <li>Tylenol</li>
+        <li>Multi-Vitmamins</li>
+        <li>Calcium</li>
+        <li>Zimax</li>
       </div>
     </div>
   );
