@@ -3,7 +3,8 @@ import { GlobalContext } from "../context/GlobalState";
 import { Medicine } from "./Medicine";
 
 export const MedicationHistory = () => {
-  const { transactions } = useContext(GlobalContext);
+  const { transactions, transactions2 } = useContext(GlobalContext);
+  console.log(transactions2);
   return (
     <>
       <h3>Checklist</h3>
