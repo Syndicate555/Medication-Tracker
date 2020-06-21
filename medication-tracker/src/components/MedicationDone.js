@@ -3,5 +3,5 @@ import { GlobalContext } from "../context/GlobalState";
 
 export const MedicationDone = ({ transaction }) => {
   const { deleteTransaction } = useContext(GlobalContext);
-  return <li className="minus">{transaction.text}</li>;
+  return <li className="plus">{transaction.text}</li>;
 };

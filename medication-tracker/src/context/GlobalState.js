@@ -4,11 +4,13 @@ import AppReducer from "./AppReducer";
 // Initial state
 const initialState = {
   transactions: [
-    { id: 1, text: "Multi-vitamin" },
-    { id: 2, text: "Multi-vitamin" },
-    { id: 3, text: "Multi-vitamin" },
-    { id: 4, text: "Multi-vitamin" },
+    { id: 1, text: "Multi-vitamin", amount: 1 },
+    { id: 2, text: "Tylenol", amount: 2 },
+    { id: 3, text: "Fish Oil", amount: 1 },
+    { id: 4, text: "Zimax", amount: 2 },
   ],
+
+  transactions2: [],
 };
 
 // Create context

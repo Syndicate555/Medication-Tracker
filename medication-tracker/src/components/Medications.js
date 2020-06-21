@@ -5,6 +5,7 @@ import { MedicationDone } from "./MedicationDone";
 
 export const Medications = () => {
   const { transactions } = useContext(GlobalContext);
+  const { transactions2 } = useContext(GlobalContext);
   return (
     <div className="inc-exp-container">
       <div>
