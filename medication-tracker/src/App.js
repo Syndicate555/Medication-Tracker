@@ -5,6 +5,7 @@ import { Medications } from "./components/Medications";
 import { MedicationHistory } from "./components/MedicationHistory";
 import { AddMedication } from "./components/AddMedication";
 import { GlobalProvider } from "./context/GlobalState";
+import { GlobalProvider1 } from "./context/GlobalState2";
 import "./App.css";
 
 function App() {
