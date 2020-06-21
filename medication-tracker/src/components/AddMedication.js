@@ -5,7 +5,7 @@ export const AddMedication = () => {
   const [text, setText] = useState("");
   const [amount, setAmount] = useState(0);
 
-  //   const { addTransaction } = useContext(GlobalContext);
+  const { addTransaction } = useContext(GlobalContext);
 
   const onSubmit = (e) => {
     e.preventDefault();
@@ -16,7 +16,7 @@ export const AddMedication = () => {
       amount: +amount,
     };
 
-    // addTransaction(newTransaction);
+    addTransaction(newTransaction);
   };
 
   return (
