@@ -29,7 +29,7 @@ export const AddMedication = () => {
             type="text"
             value={text}
             onChange={(e) => setText(e.target.value)}
-            placeholder="Enter text..."
+            placeholder="Enter Name..."
           />
         </div>
         <div className="form-control">
@@ -37,10 +37,10 @@ export const AddMedication = () => {
             Dosage: <br />
           </label>
           <input
-            type="number"
+            type="text"
             value={amount}
             onChange={(e) => setAmount(e.target.value)}
-            placeholder="Enter amount..."
+            placeholder="Enter Dosage..."
           />
         </div>
         <button className="btn">Add Medicine to list</button>
