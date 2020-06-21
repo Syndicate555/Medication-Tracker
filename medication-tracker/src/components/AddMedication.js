@@ -24,7 +24,7 @@ export const AddMedication = () => {
       <h3>Add new Medication</h3>
       <form onSubmit={onSubmit}>
         <div className="form-control">
-          <label htmlFor="text">Text</label>
+          <label htmlFor="text">Medication Name</label>
           <input
             type="text"
             value={text}
@@ -34,8 +34,7 @@ export const AddMedication = () => {
         </div>
         <div className="form-control">
           <label htmlFor="amount">
-            Amount <br />
-            (negative - expense, positive - income)
+            Dosage: <br />
           </label>
           <input
             type="number"
@@ -44,7 +43,7 @@ export const AddMedication = () => {
             placeholder="Enter amount..."
           />
         </div>
-        <button className="btn">Add transaction</button>
+        <button className="btn">Add Medicine to list</button>
       </form>
     </>
   );
